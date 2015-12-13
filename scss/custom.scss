@@ -1,0 +1,196 @@
+.splash-stripe {
+    max-width: 100%;
+    padding: rem-calc(30) 0;
+    @include box-shadow($oil 0px 2px 10px);
+}
+
+.splash-stripe:last-of-type {
+    padding-bottom: rem-calc(30);
+    margin-bottom: 0;
+}
+
+.splash-stripe-1 {
+    background-color: $white;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, rgba(255, 255, 255, .8)),
+        color-stop(1, rgba(222, 222, 222, .8))
+    ), url('../img/bg-listen.jpg');
+    background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, .8) 0%, rgba(222, 222, 222, .8) 100%), url('../img/bg-listen.jpg');
+    background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, .8) 0%, rgba(222, 222, 222, .8) 100%), url('../img/bg-listen.jpg');
+    background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, .8) 0%, rgba(222, 222, 222, .8) 100%), url('../img/bg-listen.jpg');
+    background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, .8) 0%, rgba(222, 222, 222, .8) 100%), url('../img/bg-listen.jpg');
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .8) 0%, rgba(222, 222, 222, .8) 100%), url('../img/bg-listen.jpg');
+    color: $oil;
+    h1,h2,h3,h4,h5 {
+        color: $oil;
+        text-shadow: 1px 1px 0 $white;
+        font-weight: $font-weight-bold;
+    }
+}
+
+.splash-stripe-2 {
+    background-color: $charcoal;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, rgba(59, 59, 59, .85)),
+        color-stop(1, rgba(133, 133, 133, .85))
+    ), url('../img/bg-watch.jpg');
+    background-image: -o-linear-gradient(bottom, rgba(59, 59, 59, .85) 0%, rgba(133, 133, 133, .85) 100%), url('../img/bg-watch.jpg');
+    background-image: -moz-linear-gradient(bottom, rgba(59, 59, 59, .85) 0%, rgba(133, 133, 133, .85) 100%), url('../img/bg-watch.jpg');
+    background-image: -webkit-linear-gradient(bottom, rgba(59, 59, 59, .85) 0%, rgba(133, 133, 133, .85) 100%), url('../img/bg-watch.jpg');
+    background-image: -ms-linear-gradient(bottom, rgba(59, 59, 59, .85) 0%, rgba(133, 133, 133, .85) 100%), url('../img/bg-watch.jpg');
+    background-image: linear-gradient(to bottom, rgba(59, 59, 59, .85) 0%, rgba(133, 133, 133, .85) 100%), url('../img/bg-watch.jpg');
+    color: $white;
+    h1,h2,h3,h4,h5 {
+        color: $white;
+        text-shadow: 1px 1px 0 $black;
+        font-weight: $font-weight-bold;
+    }
+    a, a:link, a:active, a:visited {
+        color: $secondary-color;
+    }
+}
+
+.hero {
+    background-image: url('../img/splash-ed-talking.jpg');
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: 50% 50%;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    min-height: rem-calc(600);
+    position: relative;
+}
+
+    .intro-container {
+        position:absolute;
+        bottom: rem-calc(10);
+        left: rem-calc(10);
+    }
+
+    .hero h1 {
+        color: $white;
+        font-weight: bold;
+        font-size: rem-calc(64);
+        line-height: rem-calc(64);
+        text-shadow: 1px 1px 0 $oil;
+    }
+
+    .hero h2 {
+        color: $white;
+        font-size: rem-calc(32);
+        line-height: rem-calc(32);
+        text-shadow: 1px 1px 0 $oil;
+    }
+
+.row-quotes {
+    font-size:rem-calc(30);
+    font-family: $font-family-serif;
+    font-style: italic;
+}
+    .quote {
+        text-align: left;
+    }
+    .quote-attribution {
+        text-align: right;
+    }
+
+.slick-prev::before, .slick-next::before {
+    color: $oil;
+}
+
+.video-box {
+    .talk-event {
+        display: inline-block;
+    }
+    .talk-links {
+        display: inline-block;
+        .talk-link {
+            padding-left: rem-calc(10);
+            a:link, a, a:active, a:visited {
+            }
+        }
+    }
+}
+
+.talks-license {
+    background-color: rgba(255,255,255,.1);
+    margin-top:rem-calc(30);
+    padding: rem-calc(30) 0;
+}
+
+.upcoming-list, .watch-list {
+    margin:0;
+    padding:0;
+    list-style: none;
+    max-height: rem-calc(410);
+    overflow: auto;
+
+    .upcoming-list-item, .watch-list-item {
+        list-style: none;
+        cursor: pointer;
+        background-color: $steel;
+        padding: rem-calc(4);
+        margin-bottom: rem-calc(4);
+        .upcoming-list-event, .watch-list-event {
+            display: block;
+            font-weight: $font-weight-bold;
+            font-size: rem-calc(16);
+        }
+        .upcoming-list-date, .watch-list-date {
+            display: block;
+            font-weight: $font-weight-normal;
+            color: $iron;
+            font-size: rem-calc(14);
+        }
+    }
+}
+
+
+.about-text p {
+    font-size: rem-calc(20);
+}
+
+/* Define mobile styles */
+@media only screen and (max-width: 40em) {
+    .row-quotes {
+        font-size:rem-calc(20);
+    }
+    .hero {
+        min-height: rem-calc(400);
+    }
+    .hero h1 {
+        color: $white;
+        font-weight: bold;
+        font-size: rem-calc(36);
+        line-height: rem-calc(36);
+        text-shadow: 1px 1px 0 $oil;
+    }
+
+    .hero h2 {
+        color: $white;
+        font-size: rem-calc(30);
+        line-height: rem-calc(30);
+        text-shadow: 1px 1px 0 $oil;
+    }
+    .upcoming-list, .watch-list {
+        max-height: rem-calc(300);
+        overflow: auto;
+    }
+
+}

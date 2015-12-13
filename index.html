@@ -1,171 +1,552 @@
+---
+layout: null
+---
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
-    <link rel="stylesheet" href="stylesheets/app.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
-  </head>
-  <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
-    </div>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Open Sourcing Mental Illness – Stronger Than Fear - Changing How We Talk About Mental Health in the Tech Workplace</title>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.2/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.2/slick-theme.css"/>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="stylesheets/app.css" />
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
+        <script src="bower_components/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+
+        <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+                <li class="name">
+                    <h1 class="top-bar-header"><a href="#">OSMI</a></h1>
+                </li>
+                 <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+
+            <section class="top-bar-section">
+                <!-- Left Nav Section -->
+                <ul class="left">
+                    <li><a href="#talks">Talks</a></li>
+                    <li><a href="#about">About Ed Finkler</a></li>
+                    <li><a href="#signup">Sign Up</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </section>
+        </nav>
+
+        <section class="hero">
+            <div class="intro-container">
+                <div class="row">
+                    <div class="small-12 large-8 medium-8 columns end">
+                        <h1>Open Sourcing Mental Illness</h1>
+                    </div>
                 </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
+                <div class="row">
+                    <div class="small-12 large-12 medium-12 columns end">
+                        <h2>Changing how we talk about mental health in the tech community</h2>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
+        </section>
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
-      </div>
-    </div>
+        <section class="splash-stripe splash-stripe-1 quotes-stripe">
+            <div class="row row-quotes">
+                <div class="small-9 large-12 small-centered columns quotes">
+                    <div class="quote-container">
+                        <div class="quote">Ed's talk is practically subversive for acknowledging mental health issues out in the open, which is exactly what we all need to be doing.</div>
+                        <div class="quote-attribution">&mdash; Jacqui Cheng</div>
+                    </div>
+                    <div class="quote-container">
+                        <div class="quote">We invite Ed to speak every year as his message is pure and useful to everyone in attendance. Our attendees constantly tell us how much they enjoyed it, and more importantly how it helped them.</div>
+                        <div class="quote-attribution">&mdash; <a href="http://pytennessee.org" target="_blank">PyTennessee</a> Organizers</div>
+                    </div>
+                    <div class="quote-container">
+                        <div class="quote">Not only did Ed tell the story in honest and yet humorous way. He provided resources for those who have their own secret and own struggles. Depression and anxiety will visit most people in their lifetimes. Ed's story demonstrates how life can go on and be enjoyed.</div>
+                        <div class="quote-attribution">&mdash; <a href="http://dynamicpaths.com/" target="_blank">Dr. Kristen Allott</a></div>
+                    </div>
+                    <div class="quote-container">
+                        <div class="quote">Excellent talk that seems to have resonated well with the whole audience. Really incredible.</div>
+                        <div class="quote-attribution">&mdash; <a href="https://joind.in/talk/view/8620#comments" target="_blank">David Stockton</a></div>
+                    </div>
+                    <div class="quote-container">
+                        <div class="quote">Excellent talk. He mixes cold hard facts and personal experiences to communicate the importance of mental health in the tech industry in very clear and approachable terms.</div>
+                        <div class="quote-attribution">&mdash; <a href="https://joind.in/talk/view/11754#comments" target="_blank">Ross Larson</a></div>
+                    </div>
+                    <div class="quote-container">
+                        <div class="quote">What makes it work so well is Ed is just honest and open with everyone. I really hope everyone has a chance to hear this talk at some point, because it is so very helpful.</div>
+                        <div class="quote-attribution">&mdash; <a href="https://joind.in/talk/view/9988#comments" target="_blank">Justin Carmony</a></div>
+                    </div>
+                    <div class="quote-container">
+                        <div class="quote">This has by far been the most valuable talk I've attended at this conference and many others.</div>
+                        <div class="quote-attribution">&mdash; <a href="https://joind.in/talk/view/9988#comments" target="_blank">Stefan Koopmanschap</a></div>
+                    </div>
+                    <div class="quote-container">
+                        <div class="quote">I was very impressed by Ed's courage and openness and the way the talk was presented. Deeply impressed.</div>
+                        <div class="quote-attribution">&mdash; <a href="https://joind.in/talk/view/8620#comments" target="_blank">Harrie Verveer</a></div>
+                    </div>
+                    <div class="quote-container">
+                        <div class="quote">An extremely courageous and open talk.</div>
+                        <div class="quote-attribution">&mdash; <a href="https://joind.in/talk/view/8620#comments" target="_blank">Timothy J. Finucane</a></div>
+                    </div>
+                    <div class="quote-container">
+                        <div class="quote">Excellent talk that seems to have resonated well with the whole audience. Really incredible.</div>
+                        <div class="quote-attribution">&mdash; <a href="https://joind.in/talk/view/8620#comments" target="_blank">David Stockton</a></div>
+                    </div>
+                    <div class="quote-container">
+                        <div class="quote">Inspired by the amount of courage Ed had to share this talk with us, wonderful talk. It was eye-opening to see how the way we interact with people affects them.</div>
+                        <div class="quote-attribution">&mdash; <a href="https://joind.in/talk/view/8620#comments" target="_blank">Matt Frost</a></div>
+                    </div>
+                    <div class="quote-container">
+                        <div class="quote">Ed always speaks to me. His honest candor and approach to the issue provide a safe space to learn that you are not alone!</div>
+                        <div class="quote-attribution">&mdash; <a href="https://twitter.com/jasonamyers/status/589856520998883328" target="_blank">Jason Meyers</a></div>
+                    </div>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="splash-stripe splash-stripe-2">
+            <div class="row row-talks" id="talks">
+                <div class="small-12 large-6 columns">
+                    <h2>Talks</h2>
+                    <div class="video-box">
+                        <div class="flex-video">
+                            <iframe width="640" height="480" src="//www.youtube-nocookie.com/embed/PPNaKiO5oFQ" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <h3 class="talk-event"><a href="http://j.mp/osmipnwphp2015video" target="_blank">Pacific Northwest PHP Conference 2015</a></h3>
+                        <div class="talk-links">
+                            <span class="talk-link"><a href="http://j.mp/osmipnwphp2015video" target="_blank"><i class="fa fa-youtube-square"></i> Video</a></span>
+                            <span class="talk-link"><a href="http://j.mp/osmipnwphp2015slides" target="_blank"><i class="fa fa-paperclip"></i> Slides</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 large-3 columns">
+                    <h3>Watch</h3>
+                    <ul class="watch-list">
+
+                        <li class="watch-list-item"
+                            data-ytid="PPNaKiO5oFQ"
+                            data-video-url="http://j.mp/osmipnwphp2015video"
+                            data-slides-url="http://j.mp/osmipnwphp2015slides">
+                            <a href="http://j.mp/osmipnwphp2015video" target="_blank">
+                                <span class="watch-list-event">Pacific Northwest PHP Conference 2015</span>
+                                <span class="watch-list-date">September 2015</span>
+                            </a>
+                        </li>
+
+                        <li class="watch-list-item"
+                            data-ytid="Fn0MlchshUU"
+                            data-video-url="http://j.mp/1MKLMfd"
+                            data-slides-url="http://j.mp/osminephp15slides">
+                            <a href="http://j.mp/1MKLMfd" target="_blank">
+                                <span class="watch-list-event">Northeast PHP Conference 2015</span>
+                                <span class="watch-list-date">August 2015</span>
+                            </a>
+                        </li>
+
+                        <li class="watch-list-item"
+                            data-ytid="0DFh5n8VeBo"
+                            data-video-url="http://j.mp/1MODkwW"
+                            data-slides-url="http://j.mp/osmilara15slides">
+                            <a href="http://j.mp/1MODkwW" target="_blank">
+                                <span class="watch-list-event">Laracon US 2015</span>
+                                <span class="watch-list-date">August 2015</span>
+                            </a>
+                        </li>
+
+                        <li class="watch-list-item"
+                            data-ytid="anpVOGvsym8"
+                            data-video-url="http://j.mp/osmiosb15video"
+                            data-slides-url="http://j.mp/osmiosb15slides">
+                            <a href="http://j.mp/osmiosb15video" target="_blank">
+                                <span class="watch-list-event">Open Source Bridge 2015</span>
+                                <span class="watch-list-date">June 2015</span>
+                            </a>
+                        </li>
+
+
+                        <li class="watch-list-item"
+                            data-ytid="C_ICrD4BZes"
+                            data-video-url="http://j.mp/stfpytn15video"
+                            data-slides-url="http://j.mp/stfpytn15slides">
+                            <a href="http://j.mp/stfpytn15video" target="_blank">
+                                <span class="watch-list-event">PyTennesee 2015</span>
+                                <span class="watch-list-date">February 2015</span>
+                            </a>
+                        </li>
+
+
+                        <li class="watch-list-item"
+                            data-ytid="L_jLBKa1dYE"
+                            data-video-url="http://j.mp/osmitnphp14video"
+                            data-slides-url="http://j.mp/osmitnphp14slides">
+                            <a href="http://j.mp/osmitnphp14video" target="_blank">
+                                <span class="watch-list-event">True North PHP 2014</span>
+                                <span class="watch-list-date">November 2014</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="watch-list-item"
+                            data-ytid="Ap7MMlw8gzE"
+                            data-video-url="http://j.mp/osmidevworkshopvideo"
+                            data-slides-url="http://j.mp/osmidevworkshopslides">
+                            <a href="http://j.mp/osmidevworkshopvideo" target="_blank">
+                                <span class="watch-list-event">DevWorkshop Conf 2014</span>
+                                <span class="watch-list-date">September 2014</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="watch-list-item"
+                            data-ytid="YX12UxsFEYg"
+                            data-video-url="http://j.mp/osmimadisonphpvideo"
+                            data-slides-url="http://j.mp/osmimadisonphp">
+                            <a href="http://j.mp/osmimadisonphpvideo" target="_blank">
+                                <span class="watch-list-event">MadisonPHP 2014</span>
+                                <span class="watch-list-date">September 2014</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="watch-list-item"
+                            data-ytid="4tswmjhA7Ws"
+                            data-video-url="http://j.mp/osmioscon14video"
+                            data-slides-url="http://j.mp/osmioscon14slides">
+                            <a href="http://j.mp/osmioscon14video" target="_blank">
+                                <span class="watch-list-event">OSCON 2014</span>
+                                <span class="watch-list-date">July 2014</span>
+                            </a>
+                        </li>
+
+
+
+
+                        <li class="watch-list-item"
+                            data-ytid="kfS_U7akhzo"
+                            data-video-url="http://j.mp/osmiosb14video"
+                            data-slides-url="http://j.mp/osmiosb14slides">
+                            <a href="http://j.mp/osmiosb14video" target="_blank">
+                                <span class="watch-list-event">Open Source Bridge 2014</span>
+                                <span class="watch-list-date">June 2014</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="watch-list-item"
+                            data-ytid="vgwqBWzy6RE"
+                            data-video-url="http://j.mp/osmiseaphpvideo"
+                            data-slides-url="http://j.mp/osmiseaphpslides">
+                            <a href="http://j.mp/osmiseaphpvideo" target="_blank">
+                                <span class="watch-list-event">Seattle PHP Users Group</span>
+                                <span class="watch-list-date">April 11, 2014</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="watch-list-item"
+                            data-ytid="MnrsrCD7U40"
+                            data-video-url="http://j.mp/osmipytn14video"
+                            data-slides-url="http://j.mp/osmipytn14slides">
+                            <a href="http://j.mp/osmipytn14video" target="_blank">
+                                <span class="watch-list-event">PyTennesee 2014</span>
+                                <span class="watch-list-date">February 2014</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="watch-list-item"
+                            data-ytid="nkFaCWEmXF4"
+                            data-video-url="http://j.mp/osmiskiphp14video"
+                            data-slides-url="http://j.mp/osmiskiphp14slides">
+                            <a href="http://j.mp/osmiskiphp14video" target="_blank">
+                                <span class="watch-list-event">SkiPHP 2014</span>
+                                <span class="watch-list-date">January 2014</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="watch-list-item"
+                            data-ytid="nkFaCWEmXF4"
+                            data-video-url="http://j.mp/osmitnphp13video"
+                            data-slides-url="http://j.mp/osmitnphp13slides">
+                            <a href="http://j.mp/osmitnphp13video" target="_blank">
+                                <span class="watch-list-event">True North PHP 2013</span>
+                                <span class="watch-list-date">November 2013</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="watch-list-item"
+                            data-ytid="g_ku2YmnWkA"
+                            data-video-url="http://j.mp/osmimadruby13video"
+                            data-slides-url="http://j.mp/osmimadruby13slides">
+                            <a href="http://j.mp/osmimadruby13video" target="_blank">
+                                <span class="watch-list-event">Madison Ruby 2013</span>
+                                <span class="watch-list-date">August 2013</span>
+                            </a>
+                        <!--     <p><em>Punk rock recording:</em></p>
+                        <iframe width="640" height="480" src="//www.youtube-nocookie.com/embed/o-z1lY6BEZU" allowfullscreen></iframe> -->
+                        </li>
+
+
+
+                        <li class="watch-list-item"
+                            data-ytid="DqRPln8X1sc"
+                            data-video-url="http://j.mp/osmidistill13video"
+                            data-slides-url="http://j.mp/osmidistill13slides">
+                            <a href="http://j.mp/osmidistill13video" target="_blank">
+                                <span class="watch-list-event">Distill 2013</span>
+                                <span class="watch-list-date">August 2013</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="watch-list-item"
+                            data-ytid="QqBl3ICJltc"
+                            data-video-url="http://j.mp/osmivideooscon13"
+                            data-slides-url="http://j.mp/osmislidesoscon13">
+                            <a href="http://j.mp/osmivideooscon13" target="_blank">
+                                <span class="watch-list-event">OSCON 2013</span>
+                                <span class="watch-list-date">July 2013</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="watch-list-item"
+                            data-ytid="t0okOTvXfCY"
+                            data-video-url="http://j.mp/osmivideolsp13"
+                            data-slides-url="http://j.mp/osmislideslsp13">
+                            <a href="http://j.mp/osmivideolsp13" target="_blank">
+                                <span class="watch-list-event">Lone Star PHP 2013</span>
+                                <span class="watch-list-date">June 2013</span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="watch-list-item"
+                            data-ytid="91qp1aAqRjY"
+                            data-video-url="http://bit.ly/osmivideoosb13"
+                            data-slides-url="http://bit.ly/osmislidesosb13">
+                            <a href="http://bit.ly/osmivideoosb13" target="_blank">
+                                <span class="watch-list-event">Open Source Bridge 2013</span>
+                                <span class="watch-list-date">June 2013</span>
+                            </a>
+                        </li>
+
+
+                        <li class="watch-list-item"
+                            data-audio-url="http://funkatron-random.s3.amazonaws.com/Open-Sourcing-Mental-Illness_tek13.mp3"
+                            data-slides-url="http://bit.ly/osmislides">
+                            <span class="watch-list-event">php|tek 13</span>
+                            <a href="http://funkatron-random.s3.amazonaws.com/Open-Sourcing-Mental-Illness_tek13.mp3" target="_blank">
+                                <span class="watch-list-date">May 2013</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="large-3 small-12 columns">
+                    <h3>Upcoming</h3>
+                    <ul class="upcoming-list">
+                        <li class="upcoming-list-item">
+                            <a href="http://truenorthphp.com/" target="_blank">
+                                <span class="upcoming-list-event">True North PHP</span>
+                                <span class="upcoming-list-date">November 5-7 • Toronto, ON</span>
+                            </a>
+                        </li>
+                        <li class="upcoming-list-item">
+                            <a href="http://nodevember.org/" target="_blank">
+                                <span class="upcoming-list-event">Nodevember 2015</span>
+                                <span class="upcoming-list-date">November 14-15 • Nashville, TN</span>
+                            </a>
+                        </li>
+                        <li class="upcoming-list-item">
+                            <a href="http://www.skiphp.com/" target="_blank">
+                                <span class="upcoming-list-event">SkiPHP 2016</span>
+                                <span class="upcoming-list-date">January 14-15 • Salt Lake City, UT</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="talks-license small-12 text-center">
+                    <i class="fa fa-info-circle fa-2x"></i>
+                    These works are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+                </div>
+            </div>
+        </section>
+
+        <section class="splash-stripe splash-stripe-1">
+            <div class="row row-bio" id="about">
+                <div class="small-12 columns">
+                    <h2>Ed Finkler</h2>
+                    <div class="row">
+                        <div class="small-6 medium-3 large-3 small-centered large-uncentered medium-uncentered columns"><img src="img/ed-finkler-circle.png" class="bio-image-circle"></div>
+                        <div class="small-12 medium-9 large-9 columns about-text">
+                            <p>Ed Finkler, also known as <a href="https://twitter.com/funkatron" target="_blank">Funkatron</a>, started making web sites before browsers had frames. He does front-end and server-side work in Python, PHP, and JavaScript. Ed is the Senior Software Architect and Head of Developer Culture at <strong><a href="http://graphstory.com" target="_blank">Graph Story</a></strong>.</p>
+
+                            <p>In 2013, Ed started his Open Sourcing Mental Illness speaking campaign to change how we deal with mental health in the tech community. He has spoken at numerous tech conferences and user groups since then.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="splash-stripe splash-stripe-2">
+            <div class="row row-signup" id="signup">
+                <div class="large-6 small-12 columns">
+                    <h2>Sign Up</h2>
+
+                    <p>Sign up for the OSMI Mailing list to get notifications of new events, resources, and campaigns</p>
+
+                    <!-- Begin MailChimp Signup Form -->
+                    <div id="mc_embed_signup">
+                        <form action="//funkatron.us10.list-manage.com/subscribe/post?u=a26d1ce652ced40c2e73fd2e7&amp;id=e342ef9329" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_a26d1ce652ced40c2e73fd2e7_e342ef9329" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        </form>
+                    </div>
+
+                    <!--End mc_embed_signup-->
+                </div>
+                <div class="large-6 small-12 columns" id="donate">
+                    <h2>Donate</h2>
+
+                    <p>Donations to the OSMI campaign allow Ed to speak at conferences and user groups that don’t provide financial support for travel and lodging.</p>
+
+                    <p><a href="http://j.mp/osmi2015campaign" class="button large-button"><strong>Donate Now!</strong></a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="splash-stripe splash-stripe-1">
+            <div class="row row-blog">
+                <div class="large-6 columns" id="blog">
+                    <h2>Blog</h2>
+                    <ul class="blog-list">
+                    {% for category in site.categories %}
+                      {% if category[0] == "open sourcing mental illness" %}
+                        {% for posts in category %}
+                          {% for post in posts %}
+                            {% if post.title %}
+                                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                            {% endif %}
+                          {% endfor %}
+                        {% endfor %}
+                      {% endif %}
+                    {% endfor %}
+                    </ul>
+                </div>
+                <div class="large-6 columns" id="resources">
+                    <h2>Resources</h2>
+                    <ul class="resources-list">
+                        <li><a href="http://www.onlinecolleges.net/for-students/mental-health-resources/" target="_blank">Critical Mental Health Resources For College Students</a></li>
+                        <li><a href="http://www.if-me.org/" target="_blank">If Me</a></li>
+                        <li><a href="http://www.mentalhealthfirstaid.org/" target="_blank">Mental Health First Aid</a></li>
+                        <li><a href="http://helpguide.org/" target="_blank">HelpGuide.org</a></li>
+                        <li><a href="http://www.devpressed.com/" target="_blank">DevPressed</a></li>
+                        <li><a href="http://nami.org" target="_blank">National Alliance on Mental Illness</a></li>
+                        <li><a href="http://bit.ly/namilocal" target="_blank">NAMI Local Chapters</a></li>
+                        <li><a href="http://www.mentalhealthamerica.net/" target="_blank">Mental Health America</a></li>
+                        <li><a href="http://www.nimh.nih.gov" target="_blank">National Institute of Mental Health</a></li>
+                        <li><a href="http://BlueHackers.org" target="_blank">BlueHackers</a></li>
+                        <li><a href="http://mentalpod.com/" target="_blank">Mental Illness Happy Hour</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="splash-stripe splash-stripe-2">
+            <div class="row row-contact" id="contact">
+                <div class="small-12 columns">
+                    <div class="row">
+                        <div class="large-3 columns">
+                            <h4>Contact</h4>
+                            <ul class="contact-list fa-ul">
+                                <li class="contact-list-item"><i class="fa-li fa fa-twitter-square"></i>
+                                    <a href="https://twitter.com/funkatron" target="_blank">Ed Finkler on Twitter</a></li>
+                                <li class="contact-list-item"><i class="fa-li fa fa-twitter-square"></i>
+                                    <a href="https://twitter.com/OSMIhelp" target="_blank">OSMI on Twitter</a></li>
+                                <li class="contact-list-item"><i class="fa-li fa fa-facebook-square"></i>
+                                    <a href="https://www.facebook.com/osmihelp" target="_blank">OSMI on Facebook</a></li>
+                                <li class="contact-list-item"><i class="fa-li fa fa-tumblr-square"></i>
+                                    <a href="https://osmihelp.org" target="_blank">OSMI on Tumblr</a></li>
+                                <li class="contact-list-item"><i class="fa-li fa fa-envelope-o"></i>
+                                    <a href="mailto:info@osmihelp.org">E-mail OSMI</a></li>
+                            </ul>
+                        </div>
+                        <div class="large-3 columns">
+                            <h4>Partners in Crime</h4>
+                            <ul class="contact-list fa-ul">
+                                <li class="contact-list-item">
+                                    <i class="fa-li fa fa-square"></i>
+                                    <a href="http://prompt.engineyard.com/" target="_blank">Prompt</a>
+                                </li>
+                                <li class="contact-list-item">
+                                    <i class="fa-li fa fa-square"></i>
+                                    <a href="http://baugues.com/depression" target="_blank">Greg Baugues</a>
+                                </li>
+                                <li class="contact-list-item">
+                                    <i class="fa-li fa fa-square"></i>
+                                    <a href="http://www.devpressed.com/" target="_blank">DevPressed</a>
+                                </li>
+                                <li class="contact-list-item">
+                                    <i class="fa-li fa fa-square"></i>
+                                    <a href="http://BlueHackers.org" target="_blank">BlueHackers</a>
+                                </li>
+                                <li class="contact-list-item">
+                                    <i class="fa-li fa fa-square"></i>
+                                    <a href="http://burnout.io/" target="_blank">Burnout.io</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="large-5 columns end">
+                            <h4>Sign-up for the mailing list</h4>
+                            <form action="//funkatron.us10.list-manage.com/subscribe/post?u=a26d1ce652ced40c2e73fd2e7&amp;id=e342ef9329" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                                <div class="row">
+                                <div class="small-9 columns"><input class="footer-email-list-input" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="your email" required></div>
+                                <div class="small-2 columns end"><input class="footer-email-list-button tiny button" type="submit" value="Go!" name="subscribe" id="mc-embedded-subscribe"></div>
+                                </div>
+                                
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px; top: -5000px"><input type="text" name="b_a26d1ce652ced40c2e73fd2e7_e342ef9329" tabindex="-1" value=""></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="bower_components/foundation/js/foundation.min.js"></script>
+        <script type="text/javascript" src="bower_components/vue/dist/vue.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.2/slick.min.js"></script>
+        <script type="text/javascript" src="js/audio.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+
+    </body>
 </html>
