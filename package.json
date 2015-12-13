@@ -1,0 +1,13 @@
+{
+  "name": "osmi-newsplash",
+  "version": "0.0.0",
+  "description": "foo",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  },
+  "author": "Ed Finkler <coj@funkatron.com>",
+  "license": "ISC"
+}
